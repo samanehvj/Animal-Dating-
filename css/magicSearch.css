@@ -1,0 +1,22 @@
+.magicInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #eee;
+  font-size: 18px;
+}
+
+.magicInput:focus {
+  outline: 3px solid #ddd;
+}
+
+.listItem {
+  display: block;
+  background-color: #f6f6f6;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.listItem:hover {
+  background-color: #aaa;
+}
