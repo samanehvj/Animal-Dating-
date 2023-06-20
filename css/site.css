@@ -1,0 +1,392 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(6, 215, 152, 1) 0%,
+    rgba(135, 219, 213, 1) 30%,
+    rgba(32, 204, 158, 1) 70%
+  );
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 100px;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 25em;
+  height: 40em;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+}
+
+.items input {
+  margin-bottom: 30px;
+  padding: 2px 0px;
+  padding-bottom: 5px;
+  width: 250px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1.5px solid;
+  border-bottom-color: grey;
+  font-weight: 700;
+  color: #585858;
+  opacity: 0.55;
+}
+
+#sign:active {
+  transform: translateY(2px);
+}
+
+::placeholder {
+  color: grey;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+#title {
+  margin-bottom: 50px;
+  letter-spacing: 5px;
+  text-align: center;
+  opacity: 0.5;
+}
+
+h1 {
+  color: red;
+}
+
+#button {
+  padding: 20px 30px;
+  margin-top: 30px;
+  outline: none;
+  border: none;
+  font-size: medium;
+  font-weight: 600;
+  letter-spacing: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(6, 215, 152, 1) 0%,
+    rgba(32, 204, 158, 1) 30%,
+    rgba(135, 219, 213, 1) 70%
+  );
+  color: grey;
+}
+
+#button:active {
+  transform: translateY(2px);
+}
+
+#button text {
+  opacity: 0.5;
+}
+
+#sign {
+  margin-top: 4em;
+  text-align: center;
+  letter-spacing: 5px;
+  cursor: pointer;
+  color: rgb(11, 194, 142);
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.wrapper {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+.content {
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.profile-card {
+  background: white;
+  border-radius: 5px;
+  width: 100%;
+  font-family: arial;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.profile-card .details {
+  padding: 20px;
+}
+
+.profile-card a.profile-link {
+  text-decoration: none;
+}
+.cv-align-contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-align-contents {
+  display: block;
+}
+.card {
+  background: white;
+  padding: 70px;
+  border-radius: 5px;
+  width: 100%;
+  font-family: anson;
+  position: relative;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.card .image {
+  width: 100%;
+  height: 200px;
+  background: #ccc;
+}
+
+.card h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-card .details span {
+  color: #000;
+}
+
+.profile-card .image {
+  width: 100%;
+  height: 450px;
+  background: #ccc;
+  background-image: url("../assets/_name.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.profile-card h2 {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.profile-card p {
+  font-size: 14px;
+}
+
+#likeBtn {
+  position: absolute;
+  bottom: 100px;
+  left: 20px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+  background: white;
+  padding: 20px;
+  color: darkred;
+  border-radius: 100px;
+}
+#noBtn {
+  position: absolute;
+  bottom: 100px;
+  right: 20px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+  background: white;
+  padding: 20px;
+  color: orange;
+  border-radius: 100px;
+}
+
+.addpadding {
+  padding-bottom: 100px;
+}
+
+.profile-card h1 {
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: orange;
+}
+
+form .fieldgroup {
+  padding-bottom: 19px;
+}
+.fas fa-paw {
+  color: peru;
+}
+form .fieldgroup label {
+  font-family: anson;
+  margin-bottom: 10px;
+  clear: both;
+  display: block;
+}
+
+form .fieldgroup input {
+  width: 100%;
+  font-size: 18px;
+  padding: 10px 0px;
+  color: #999;
+  border: none;
+  border-bottom: 3px solid;
+  margin-bottom: 10px;
+  font-family: anson;
+}
+
+form .fieldgroup textarea {
+  padding: 10px 0px;
+  color: #999;
+  border: none;
+  border-bottom: 2px solid;
+  margin-bottom: 10px;
+  width: 100%;
+  font-size: 18px;
+  font-family: anson;
+}
+form .checklist div {
+  overflow: auto;
+}
+form .checklist div input {
+  float: left;
+  width: auto;
+  margin-right: 15px;
+  margin-top: 1px;
+}
+
+form .checklist div span {
+  float: left;
+}
+
+#login h1 {
+  font-family: Anson;
+  font-weight: 500;
+  color: #4e717e;
+}
+#login p {
+  font-family: anson;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input.btn-primary {
+  background: #4e717e;
+  text-transform: uppercase;
+  font-weight: normal;
+  border-radius: 5px;
+  border: none;
+  color: #fff !important;
+}
+
+.card a {
+  color: #4e717e;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.editProfilePhoto {
+  position: absolute;
+  top: -70px;
+  left: 0px;
+  height: 50px;
+  width: 100%;
+}
+
+#thePhoto {
+  background: #ccc;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center center;
+}
+
+#profilePhotoField {
+  display: none;
+}
+
+#footernav {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  height: 70px;
+  background: #eee;
+  border-top: 1px solid #eee;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#footernav a {
+  text-decoration: none;
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #666;
+}
+
+#footernav a.active {
+  color: #f765a3;
+}
+
+.actions {
+  padding: 20px;
+}
+.btn-primary {
+  background: #a155b9;
+  border: none;
+  color: #fff !important;
+  text-transform: uppercase;
+  font-weight: normal;
+  border-radius: 5px;
+  padding: 10px 20px;
+  display: inline-block;
+  text-decoration: none;
+}
+.btn-neg {
+  background: crimson;
+  border: none;
+  color: #fff !important;
+  text-transform: uppercase;
+  font-weight: normal;
+  border-radius: 5px;
+  padding: 10px 20px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#matchmessage {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  background: white;
+  z-index: 99999;
+  padding-top: 200px;
+}
+
+#matchmessage h1 {
+  font-family: arial;
+}
